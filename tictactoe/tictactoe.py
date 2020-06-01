@@ -9,7 +9,10 @@ import copy
 X = "X"
 O = "O"
 EMPTY = '-'
+alpha_beta = False
 
+if alpha_beta:
+    import 
 
     
 def initial_state():
@@ -142,14 +145,7 @@ def minimax(board):
     """
     Returns the optimal action for the current player on the board.
     """
-    """
-    AI function that choice the best move
-    :param state: current state of the board
-    :param depth: node index in the tree (0 <= depth <= 9),
-    but never nine in this case (see iaturn() function)
-    :param player: an human or a computer
-    :return: a list with [the best row, best col, best score]
-    """
+
     if terminal(board):
         return None
 
